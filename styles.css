@@ -16,6 +16,22 @@
   --body: "Cormorant Garamond", serif;
   --base-size: var(--baseline) * 1.2;
 
+  --ff-title: ;
+  --ff-regular: ;
+  --ff-small: ;
+
+  --clr-neutral-100: white;
+  --clr-neutral-600: rgb(87, 87, 87);
+  --clr-neutral-900: rgb(20, 20, 20);
+
+  --clr-primary-300: ;
+  --clr-primary-500: ;
+  --clr-primary-700: ;
+
+  --clr-accent-300: ;
+  --clr-accent-500: ;
+  --clr-accent-700: ;
+
   --size-200: 0.25px;
   --size-300: 0.5px;
   --size-400: 0.75px;
