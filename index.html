@@ -6,28 +6,36 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./app.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Merienda:wght@300..900&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="cover">
       <div class="book">
+        <!-- Cover Page -->
         <label for="page-1" class="cover__page book__page--cover">
           <!-- <img src="./imgs/emily.jpg" alt="" /> -->
         </label>
-
+        <!-- Title & Table of Contents Pages -->
         <label for="page-2" class="book__page book__page--1-2">
           <input type="checkbox" name="page" id="page-2" />
 
           <div class="book__page-front">
-            <div class="page__content">
-              <h1 class="page__content-book-title">My Story</h1>
-              <h2 class="page__content-author">Emily Ellis</h2>
+            <div class="page__content title-page">
+              <h1 class="book-title">My Story</h1>
+              <h2 class="author">Emily Ellis</h2>
 
-              <p class="page__content-credits">
+              <p class="credits">
                 Website By
                 <span>Elijah Ellis</span>
               </p>
 
-              <div class="page__content-copyright">
+              <div class="copyright">
                 <p>&copy; MMXXV Emily Ellis</p>
               </div>
             </div>
@@ -36,66 +44,152 @@
             <div class="page__content">
               <div class="table-of-contents">
                 <h1>Table of Contents</h1>
-                <div class="chapter">
-                  <h2>Chapter 1</h2>
-                  <a class="chapter__details" href="#">
-                    <span class="chapter__title">
-                      The Resume
-                      <span class="leaders" aria-hidden="true"></span>
-                    </span>
-                    <span class="chapter__page">3</span>
-                  </a>
-                </div>
-                <div class="chapter">
-                  <h2>Chapter 2</h2>
-                  <a class="chapter__details" href="#">
-                    <span class="chapter__title">
-                      The Resume
-                      <span class="leaders" aria-hidden="true"></span>
-                    </span>
-                    <span class="chapter__page">3</span>
-                  </a>
-                </div>
-                <div class="chapter">
-                  <h2>Chapter 3</h2>
-                  <a class="chapter__details" href="#">
-                    <span class="chapter__title">
-                      The Resume
-                      <span class="leaders" aria-hidden="true"></span>
-                    </span>
-                    <span class="chapter__page">3</span>
-                  </a>
-                </div>
-                <div class="chapter">
-                  <h2>Chapter 4</h2>
-                  <a class="chapter__details" href="#">
-                    <span class="chapter__title">
-                      The Resume
-                      <span class="leaders" aria-hidden="true"></span>
-                    </span>
-                    <span class="chapter__page">3</span>
-                  </a>
+                <div class="chapters">
+                  <div class="chapter">
+                    <h2>Chapter 1</h2>
+                    <a class="chapter__details" href="#">
+                      <span class="chapter__title">
+                        Who am I
+                        <span class="leaders" aria-hidden="true"></span>
+                      </span>
+                      <span class="chapter__page">3</span>
+                    </a>
+                  </div>
+                  <div class="chapter">
+                    <h2>Chapter 2</h2>
+                    <a class="chapter__details" href="#">
+                      <span class="chapter__title">
+                        Collected Works
+                        <span class="leaders" aria-hidden="true"></span>
+                      </span>
+                      <span class="chapter__page">3</span>
+                    </a>
+                  </div>
+                  <div class="chapter">
+                    <h2>Chapter 3</h2>
+                    <a class="chapter__details" href="#">
+                      <span class="chapter__title">
+                        Schooling & Tutelage
+                        <span class="leaders" aria-hidden="true"></span>
+                      </span>
+                      <span class="chapter__page">3</span>
+                    </a>
+                  </div>
+                  <div class="chapter">
+                    <h2>Chapter 4</h2>
+                    <a class="chapter__details" href="#">
+                      <span class="chapter__title">
+                        Professional Endeavours
+                        <span class="leaders" aria-hidden="true"></span>
+                      </span>
+                      <span class="chapter__page">3</span>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="page__number">2</div>
             </div>
           </div>
         </label>
-
+        <!-- Short poem and Start of Who am I Pages -->
         <label for="page-3" class="book__page book__page--3-4">
           <input type="checkbox" name="page" id="page-3" />
 
           <div class="book__page-front">
             <div class="page__content">
+              Short Poem here
               <div class="page__number">3</div>
             </div>
           </div>
           <div class="book__page-back">
             <div class="page__content">
+              <div class="who-am-i">
+                <h2>
+                  <p>Chapter 1</p>
+                  <p>Who am I</p>
+                </h2>
+                <p>
+                  Fun-loving, never-bored, coffee-addicted individual who values
+                  creativity, authenticity, and a solid sense of humor. While
+                  writing is my passion, I also greatly enjoy customer service
+                  and relations, a fast-paced work environment, paying close
+                  attention to details, and being everyone’s friendly
+                  neighborhood barista.
+                </p>
+                <p><br />Need Emily to write here!!</p>
+              </div>
               <div class="page__number">4</div>
             </div>
           </div>
         </label>
+
+        <label for="page-4" class="book__page book__page--5-6">
+          <input type="checkbox" name="page" id="page-4" />
+
+          <div class="book__page-front">
+            <div class="page__content">
+              <div class="page__number">5</div>
+            </div>
+          </div>
+          <div class="book__page-back">
+            <div class="page__content">
+              <div class="page__number">6</div>
+            </div>
+          </div>
+        </label>
+
+        <label for="page-5" class="book__page book__page--7-8">
+          <input type="checkbox" name="page" id="page-5" />
+
+          <div class="book__page-front">
+            <div class="page__content">
+              <div class="page__number">7</div>
+            </div>
+          </div>
+          <div class="book__page-back">
+            <div class="page__content">
+              <div class="page__number">8</div>
+            </div>
+          </div>
+        </label>
+
+        <label for="page-6" class="book__page book__page--9-10">
+          <input type="checkbox" name="page" id="page-6" />
+
+          <div class="book__page-front">
+            <div class="page__content">
+              <div class="page__number">9</div>
+            </div>
+          </div>
+          <div class="book__page-back">
+            <div class="page__content">
+              <div class="page__number">10</div>
+            </div>
+          </div>
+        </label>
+
+        <label for="page-7" class="book__page book__page--11-12">
+          <input type="checkbox" name="page" id="page-7" />
+
+          <div class="book__page-front">
+            <div class="page__content">
+              <div class="page__number">11</div>
+            </div>
+          </div>
+          <div class="book__page-back">
+            <div class="page__content">
+              <div class="page__number">12</div>
+            </div>
+          </div>
+        </label>
+
+        <div class="book__page book__page--13">
+          <div class="book__page-front">
+            <div class="page__content">
+              <div class="page__number">13</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
