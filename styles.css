@@ -68,7 +68,7 @@ body {
   font-family: var(--ff-standard);
   overflow: hidden;
 
-  background-image: url("imgs/bg.jpg");
+  background-image: url("imgs/redBG.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -256,11 +256,10 @@ a {
   }
 }
 
-.book__page--3-4 {
-  z-index: 90;
-}
-
-.who-am-i {
+.who-am-i,
+.collected-works,
+.workforce,
+.schooling {
   & h2 {
     text-transform: uppercase;
 
@@ -270,7 +269,7 @@ a {
     }
     & p:nth-child(2) {
       font-size: var(--fs-550);
-      margin-bottom: var(--size-800);
+      margin-bottom: var(--size-600);
       padding-bottom: var(--size-300);
       border-bottom: 1px solid var(--clr-primary-300);
     }
@@ -282,6 +281,52 @@ a {
   }
 }
 
+.work {
+  text-align: justify;
+
+  & h3 {
+    margin-bottom: var(--size-500);
+  }
+}
+
+.schooling__details {
+  display: grid;
+  gap: var(--size-600);
+
+  & span {
+    font-weight: 700;
+    color: var(--clr-primary-500);
+  }
+}
+
+.job {
+  text-align: justify;
+
+  & h4 {
+    margin-bottom: var(--size-200);
+  }
+
+  & span {
+    font-weight: 300;
+  }
+
+  & p {
+    font-size: var(--fs-400);
+  }
+
+  & ul {
+    font-size: var(--fs-400);
+    list-style: none;
+
+    & li {
+      margin-bottom: var(--size-200);
+    }
+  }
+}
+
+.book__page--3-4 {
+  z-index: 90;
+}
 .book__page--5-6 {
   z-index: 80;
 }
@@ -293,6 +338,9 @@ a {
 }
 .book__page--11-12 {
   z-index: 50;
+}
+.book__page--13-14 {
+  z-index: 40;
 }
 
 .book__page-front {
