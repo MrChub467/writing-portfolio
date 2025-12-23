@@ -2,6 +2,7 @@ const one = document.querySelector(".chapter-one");
 const two = document.querySelector(".chapter-two");
 const three = document.querySelector(".chapter-three");
 const four = document.querySelector(".chapter-four");
+const five = document.querySelector(".chapter-five");
 const backbtn = document.querySelector(".back-btn");
 
 const pages = Array.from(document.querySelectorAll("input"));
@@ -34,6 +35,13 @@ four.addEventListener("click", (e) => {
     }, 200 * i);
   }
 });
+five.addEventListener("click", (e) => {
+  for (let i = 0; i < 8; ++i) {
+    setTimeout(() => {
+      pages[i].checked = "true";
+    }, 200 * i);
+  }
+});
 
 backbtn.addEventListener("click", (e) => {
   let noPages = true;
@@ -53,4 +61,12 @@ backbtn.addEventListener("click", (e) => {
       }, 200 - i);
     }
   }
+});
+
+// Get the form element
+const myForm = document.getElementById("form");
+
+// Add an event listener for the submit event
+myForm.addEventListener("submit", function (event) {
+  myForm.reset();
 });

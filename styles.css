@@ -142,10 +142,6 @@ body {
   background-size: cover;
 }
 
-.book__page--1-2 {
-  z-index: 100;
-}
-
 .title-page {
   display: flex;
   flex-direction: column;
@@ -201,7 +197,7 @@ body {
 .chapters {
   margin-top: var(--size-500);
   display: grid;
-  gap: var(--size-700);
+  gap: var(--size-600);
 }
 
 .chapter {
@@ -259,7 +255,8 @@ a {
 .who-am-i,
 .collected-works,
 .workforce,
-.schooling {
+.schooling,
+.contact-me {
   & h2 {
     text-transform: uppercase;
 
@@ -324,6 +321,9 @@ a {
   }
 }
 
+.book__page--1-2 {
+  z-index: 100;
+}
 .book__page--3-4 {
   z-index: 90;
 }
@@ -341,6 +341,13 @@ a {
 }
 .book__page--13-14 {
   z-index: 40;
+}
+.book__page--15-16 {
+  z-index: 30;
+}
+.book__page--17 {
+  z-index: 20;
+  cursor: auto;
 }
 
 .book__page-front {
@@ -406,4 +413,100 @@ input[type="checkbox"] {
   &:hover {
     border: 1px solid var(--clr-primary-700);
   }
+}
+
+/* -------------------------- FORM -------------------------- */
+
+.form-header {
+  text-shadow: 1px 0 var(--clr-primary-100);
+  margin-bottom: var(--size-400);
+  color: var(--clr-neutral-800);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #bbb5af;
+}
+
+input:focus,
+textarea:focus {
+  color: #bbb5af;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: #e2dedb;
+}
+
+input,
+button {
+  width: 75%;
+
+  font-family: var(--ff-standard);
+  font-size: var(--fs-500);
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: transparent;
+  outline: none;
+
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+
+  transition: all 0.3s ease-in-out;
+}
+
+input:hover,
+button:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 75%;
+  max-width: 90%;
+  resize: none;
+
+  height: 200px;
+  max-height: 10%r;
+  padding: 15px;
+
+  background: transparent;
+  outline: none;
+
+  font-family: var(--ff-standard);
+  font-size: var(--fs-500);
+
+  border: solid 1px #b3aca7;
+
+  transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  margin: -6px 0 0 0;
+
+  font-family: var(--ff-standard);
+  font-size: var(--fs-500);
+  color: #aca49c;
+
+  outline: none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
 }
