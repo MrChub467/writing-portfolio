@@ -142,6 +142,14 @@ body {
   background-size: cover;
 }
 
+.help-user {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: var(--fs-400);
+  color: var(--clr-primary-500);
+}
+
 .title-page {
   display: flex;
   flex-direction: column;
@@ -397,21 +405,19 @@ label:has(input:checked) {
 
 input[type="checkbox"] {
   display: none;
-
-  /* &:checked + .book__page {
-    transition: transform 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transform: rotateY(-180deg);
-  } */
 }
 
 .back-btn {
   margin-top: var(--size-400);
-  border: 1px solid var(--clr-primary-500);
+  border: 3px solid var(--clr-primary-100);
   border-radius: var(--size-300);
   padding: var(--size-200) var(--size-300);
+  color: var(--clr-primary-100);
+  font-weight: 700;
 
   &:hover {
-    border: 1px solid var(--clr-primary-700);
+    border-color: var(--clr-primary-500);
+    color: var(--clr-primary-500);
   }
 }
 
@@ -509,4 +515,16 @@ textarea:hover {
 
 #submit:hover {
   color: #e2dedb;
+}
+
+@media (max-width: 50em) {
+  body {
+    overflow: scroll;
+    height: 100vh;
+    width: 160vw;
+  }
+
+  .cover {
+    /* transform: translateX(10%); */
+  }
 }
