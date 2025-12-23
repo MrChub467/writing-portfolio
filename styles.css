@@ -396,3 +396,14 @@ input[type="checkbox"] {
     transform: rotateY(-180deg);
   } */
 }
+
+.back-btn {
+  margin-top: var(--size-400);
+  border: 1px solid var(--clr-primary-500);
+  border-radius: var(--size-300);
+  padding: var(--size-200) var(--size-300);
+
+  &:hover {
+    border: 1px solid var(--clr-primary-700);
+  }
+}
